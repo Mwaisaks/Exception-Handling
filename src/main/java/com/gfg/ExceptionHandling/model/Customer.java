@@ -1,13 +1,11 @@
 package com.gfg.ExceptionHandling.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.lang.Contract;
 
 @Entity
+@Table(name = "customer")
 @Getter
 @Setter
 @AllArgsConstructor

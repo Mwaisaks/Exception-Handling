@@ -20,6 +20,10 @@ import java.util.NoSuchElementException;
 public class CustomerController {
 
     private final CustomerService customerService;
+    @GetMapping
+    public String home(){
+        return "This project was done to explore exception handling in Spring Boot";
+    }
 
     @GetMapping("/getCustomer/{id}")
     public ResponseEntity<Customer> getCustomer(@PathVariable Long id){
